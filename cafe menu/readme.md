@@ -1,3 +1,3 @@
-<h1>Project Demo: </h1>
+<h1>Project Demo: Cafe Menu </h1>
 
 ![alt text](preview.png)

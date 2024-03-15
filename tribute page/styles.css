@@ -8,11 +8,20 @@
   margin: 0 4rem 0 4rem;
 }
 
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem;
+  padding: 4rem;
+}
+
 #image {
   display: block;
   justify-content: center;
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 #img-caption {
