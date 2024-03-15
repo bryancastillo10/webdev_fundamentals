@@ -1,0 +1,102 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 1rem;
+  background-color: #0072b2;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+/* Parent Layout */
+.headline {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container {
+  margin: auto 5rem 1rem 5rem;
+  border-radius: 10px;
+  background-color: black;
+}
+
+#survey-form {
+  padding: 2rem;
+  margin-bottom: 0;
+}
+
+/*  Form Component Layout */
+.form-component {
+  margin: 0 auto 1.5rem auto;
+  padding: 0.25rem;
+}
+
+.infield,
+#dropdown {
+  display: block;
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 8px;
+  border: none;
+}
+.question {
+  font-size: 1rem;
+}
+/*  Input Text and Dropdown menu */
+#name-label,
+#email-label,
+#number-label,
+#dropdown {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Radio Button and Checkbox */
+.choice {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  padding: 0.2rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.radio-input {
+  display: inline-block;
+  min-width: 0.8rem;
+  min-height: 0.8rem;
+}
+/* Textarea */
+#comments {
+  min-height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #009e73;
+  color: #f5f6f7;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.submit-btn:hover {
+  font-size: 18px;
+}
+.submit-btn:focus-within {
+  font-size: 18px;
+}

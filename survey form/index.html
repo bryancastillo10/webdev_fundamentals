@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css")
+  
+</head>
+<body>
+  <div class="headline">
+   <h1 id="title">Survey Form</h1>
+    <p id="description">This a survey form for your personal concerns about the new company policy.</p>
+    </div>
+    <div class="container">
+   <form id="survey-form" method="POST">
+     <div class="form-component">
+        <!--First Name-->
+        <label id="name-label" for="name">Employee Name:</label> <input class="infield" id="name" name="name" type="text" placeholder="Enter your whole name" required />
+        </div>
+
+<!--Email-->
+<div class="form-component">
+<label id="email-label" for="email">Email:</label> <input class="infield" id="email" name="email" type="email"
+placeholder="Enter your company email"
+ required />
+</div>
+
+<!--Age-->
+<div class="form-component">
+<label id="number-label" for="number">Age:</label> <input class="infield" id="number" type="number" name="age" min="10" max="100"
+placeholder="Select your age" />
+</div>
+
+<!--Dropdown: Question 1-->
+<div class="form-component">
+<p class="question">What is your role in the company?</p>
+<select id="dropdown">
+<option value="">(select here)</option>
+<option value="1">Support Staff</option>
+<option value="2">Operations</option>
+<option value="3">Marketing</option>
+<option value="4">Management/Executive</option>
+</select><div>
+
+<!--Radio: Question 2-->
+<div class="form-component">
+<p class="question" >Do you agree to the  major company policy change? </p>
+ <!--Radio Button 1-->
+ <label><input value="yes" class="radio-input" type="radio" name="option-yes"  checked /> Yes, I accept it!</label>
+ <!--Radio Button 2-->
+ <label>
+ <input value="no" class="radio-input" type="radio" name="option-no"   /> No, it needs more speculation</label>
+</div>
+
+<!--Radio: Question 3-->
+<div class="form-component">
+<p class="question" >Do you need any further assistance from
+  the company adjustments? </p>
+ <!--Radio Button 1-->
+ <label><input value="yes" class="radio-input" type="radio" name="option-yes"  checked /> Yes</label>
+ <!--Radio Button 2-->
+ <label>
+ <input value="no" class="radio-input" type="radio" name="option-no"   /> No</label>
+</div>
+
+<!--Checkbox: Question 4-->
+<div class="form-component">
+ <p class="question" >What are your major concerns?</legend>
+ <!--Check 1-->
+ <label class="choice" ><input value="salary" type="checkbox" /> Salary Adjustment </label>
+  <!--Check 2-->
+ <label class="choice" ><input value="organization" type="checkbox" /> Organization Hierarchy </label>
+  <!--Check 3-->
+ <label class="choice"><input value="environment" type="checkbox"  /> Working Environment </label>
+  <!--Check 4-->
+ <label class="choice"><input value="duty" type="checkbox" /> Work Assignment </label>
+  <!--Check 5-->
+ <label class="choice"><input id="checkbox" value="leave" type="checkbox"  /> Number of Vacation Leaves </label>
+   <!--Check 6-->
+ <label class="choice"><input id="checkbox" value="social" type="checkbox"  /> Social Activities </label>
+   <!--Check 7-->
+ <label class="choice"><input id="checkbox" value="resign" type="checkbox"  /> Impartiality upon termination </label> 
+</div>
+
+<!--Textarea: Question 5-->
+<div class="form-component">
+   <p class="question"  for="comments">Further comments and suggestion:</p>
+<textarea id="comments" name="comments" rows="4" cols="30" placeholder="Type here some suggestions"></textarea>  
+</div>
+
+<!--Submit Button-->
+<div class="form-component">
+<button class="submit-btn" id="submit" type="submit">Submit</button>
+</div>
+
+</form>   
+</div>
+    
+</body>
+</html>
