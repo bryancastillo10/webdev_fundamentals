@@ -1,0 +1,21 @@
+#main {
+  text-align: center;
+}
+
+#tribute-info {
+  display: block;
+  text-align: justify;
+  margin: 0 4rem 0 4rem;
+}
+
+#image {
+  display: block;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  font-weight: bold;
+  font-size: 18px;
+}
