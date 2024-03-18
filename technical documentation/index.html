@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Python for Everybody!</header>
+    <ul>
+      <li><a class="nav-link" href="#introduction_to_python">Introduction to Python</a></li>
+      <li><a class="nav-link"  href="#prerequisites_of_learning_python">
+        Prerequisites of Learning Python</a></li>
+      <li><a class="nav-link"  href="#variables">Variables</a></li>
+      <li><a class="nav-link"  href="#control_flow_statements">Control Flow Statements</a></li>
+      <li><a class="nav-link"  href="#object_oriented_programming">Object Oriented Programming</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+      <header  id="main-section"> Technical Documentation</header>
+      <section id="introduction_to_python" class="main-section">
+        <header>Introduction to Python</header>
+        <article>
+          <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It emphasizes code readability and simplicity, making it ideal for beginners and professionals alike. Python supports multiple programming paradigms and has a vast ecosystem of libraries and frameworks.</p>
+          <p>
+Python's versatility extends to various domains, from web development (Django, Flask) to data science (NumPy, pandas) and machine learning (TensorFlow, PyTorch). Its syntax facilitates rapid development, with dynamic typing and automatic memory management. Python's extensive standard library provides modules for diverse functionalities, promoting code reuse and efficiency. Additionally, its active community fosters continuous development and support, ensuring Python remains a popular choice for projects of all scales, from small scripts to enterprise applications. Two key points to take away are:</p>
+<ul>
+  <li>Python is dynamically typed, allowing variables to change types as needed during execution.</li>
+  <li>Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming, offering flexibility in coding styles.</li>
+</ul>
+        </article>
+        </section>
+        <section id="prerequisites_of_learning_python" class="main-section">
+          <header>Prerequisites of learning Python</header>
+          <article>
+            <p>There are some things you should need to take not when you are getting started to learn Python:</p>
+            <ul>
+              <li>General programming concepts: Familiarity with fundamental concepts like variables, data types, loops, conditionals, functions, and algorithms lays a strong foundation.</li>
+              <li>Text editors or IDEs: Knowledge of how to use text editors or Integrated Development Environments (IDEs) for writing and running Python code enhances productivity and debugging.</li>
+              <li>Basic command line usage: Understanding how to navigate directories, run scripts, and install packages via the command line interface facilitates Python development.</li>
+              <li>Problem-solving skills: Being able to break down problems into smaller, manageable tasks and logically solve them is essential for efficient Python programming.</li>
+              <li>Understanding of data structures and algorithms: Proficiency in data structures like lists, dictionaries, and sets, as well as algorithms for tasks such as sorting and searching, is crucial for effective Python programming, especially in more complex projects.</li>
+            </ul>
+          </article>
+        </section>
+                        <section id="control_flow_statements" class="main-section">
+          <header>Control Flow Statements</header>
+          <article>
+            <p>Control flow statements in Python help you control how your code runs based on certain conditions or loops. Imagine you have a list of tasks to do, and you want to decide what to do next based on whether it's raining or sunny outside. You might use a conditional statement like an "if" statement to check the weather. If it's raining, you might stay inside and read a book. If it's sunny, you might go outside for a walk. Similarly, loop statements like "for" and "while" allow you to repeat actions multiple times, like checking each item off your to-do list. And branching statements like "break" and "continue" give you ways to change your plan based on unexpected situations. With control flow statements, you can make your Python code smarter and more flexible, responding to different scenarios just like you do in everyday life.</p>
+<p> In Python,  the execution of those control flow code based on certain conditions or loops. They include conditional statements (if, elif, else), loop statements (for, while), and branching statements (break, continue, pass).</p>
+<ul>
+  <li> If-else Statements</li>
+<code>x = 10
+if x > 5:
+    print("x is greater than 5")
+elif x == 5:
+    print("x is equal to 5")
+else:
+    print("x is less than 5")
+</code>
+<li>For Loop</li>
+<code>
+for i in range(5):
+    print(i)
+</code>
+<li>While Loop</li>
+<code>
+x = 0
+while x < 5:
+    print(x)
+    x += 1</code>
+</ul>
+<p>Control flow statements provide flexibility in program execution, allowing developers to create logic that responds to different conditions and iterates over data structures efficiently.</p>
+          </article>
+        </section>
+                      <section id="variables" class="main-section">
+          <header>Variables</header>
+          <article>
+            <p>In Python, variables are used to store data values. Unlike some other programming languages, Python is dynamically typed, meaning you don't need to explicitly declare the variable type. Variable names are case-sensitive and must follow certain rules:</p>
+<ul>
+  <li>Must start with a letter (a-z, A-Z) or underscore (_).</li>
+  <li>Can be followed by letters, digits (0-9), or underscores (_).</li>
+  <li>Cannot be a Python keyword or reserved word.</li>
+</ul>
+<code>x = 10  #int data type
+y = 3.14  #float data type
+name = "John"  #string data type
+is_valid = True #boolean data type
+</code>
+<p>Variable scope in Python refers to the region of code where the variable is accessible. Variables can have local scope (inside a function), global scope (defined outside any function), or built-in scope (predefined in Python). Understanding variable scope is crucial for writing efficient and bug-free code.</p>
+<p>In summary, Python variables are used to store data values, can hold different types of data, and are dynamically typed. They follow specific naming rules, support multiple assignment, and their scope determines where they can be accessed in code.</p>
+          </article>
+        </section>
+                <section id="object_oriented_programming" class="main-section">
+          <header>Object Oriented Programming</header>
+          <article>
+            <p>Object-oriented programming (OOP) in Python revolves around the concept of objects, which are instances of classes. Classes serve as blueprints or templates for creating objects with specific attributes (data) and behaviors (methods). OOP in Python offers a robust framework for organizing code, promoting modularity, reusability, and maintainability.</p>
+          <p>At the core of OOP in Python are classes. Classes encapsulate data and behavior into a single unit. They define the structure and behavior of objects. Here's a basic example of a class definition in.</p>
+          <code>class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+    
+    def drive(self):
+        print(f"{self.make} {self.model} is driving.")
+</code>
+<p>In this example, Car is a class with two attributes (make and model) and one method (drive). The __init__ method is a special method called the constructor, used to initialize the object's state. self refers to the instance of the class.To create an object (instance) of the class Car:</p>
+<code>my_car = Car("Toyota", "Camry")
+</code>
+<p>Now my_car is an instance of the Car class with make set to "Toyota" and model set to "Camry". We can access its attributes and call its methods:</p>
+<code>print(my_car.make)  # Output: Toyota
+print(my_car.model)  # Output: Camry
+my_car.drive()  # Output: Toyota Camry is driving.</code>
+<p>Inheritance is another crucial aspect of OOP in Python. It allows a class to inherit attributes and methods from another class, promoting code reuse and extensibility. </p>
+          </article>
+        </section>
+  </main>
+</body>

@@ -1,0 +1,88 @@
+body {
+  font-family:'Open Sans',Arial,sans-serif;
+  color: #4D4E53;
+  line-height:1.5;
+}
+
+header{
+  color:#000;
+  margin:10px;
+  text-align:center;
+  font-size:1.8em;
+}
+
+#navbar {
+  position:fixed;
+  min-width:290px;
+  top:0px;
+  left:0px;
+  width:300px;
+  height:100%;
+  border-right:solid;
+  border-color:#56B4E9;
+}
+#navbar ul{
+  height:88%;
+  padding:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+#navbar li{
+  border-top:1px;
+  position:relative;
+  width:100%;
+  }
+
+#navbar li a{
+  display:block;
+  padding:10px 30px;
+  color: #4d4e53;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+#main-doc{
+  position:absolute;
+  margin-left:310px;
+  padding:20px;
+  margin-bottom:110px;
+}
+
+#main-doc header{
+  text-align:left;
+  margin:0px;
+}
+
+
+section article{
+  margin:15px;
+  font-size:0.95em;
+}
+
+code{
+  display:block;
+  text-align:left;
+  white-space:pre-line;
+  position:relative;
+  font-style:mono;
+  word-break:normal;
+  word-wrap:normal;
+  line-height:2;
+  background-color:#000;
+  color:limegreen;
+  padding:15px;
+  margin:10px;
+  border-radius:5px;
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
