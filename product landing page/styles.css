@@ -188,9 +188,12 @@ each section upon clicking the link */
 
 /* Products Video */
 .products-video {
+  position: relative;
+  left: 15%;
+  z-index: -1;
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 70%;
 }
 
 .products-video #video {
@@ -237,6 +240,7 @@ each section upon clicking the link */
 /* Breakpoint for WideScreen */
 @media only screen and (min-width: 768px) {
   .products-video {
+    position: static;
     max-height: 520px;
     margin-left: 1.25rem;
   }
