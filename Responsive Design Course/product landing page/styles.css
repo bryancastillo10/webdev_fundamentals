@@ -80,7 +80,7 @@ each section upon clicking the link */
     center repeat;
   background-size: cover;
   width: 100%;
-  max-height: 100%;
+  height: 80vh;
   border-bottom: 4px solid #0072b2;
 }
 
@@ -88,7 +88,7 @@ each section upon clicking the link */
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
-  padding: 4rem 2rem 1.5rem 2.5rem;
+  padding: 1rem 2rem 1.5rem 2.5rem;
   text-align: left;
   width: 50%;
   color: #fff;
@@ -100,6 +100,9 @@ each section upon clicking the link */
   #home {
     max-height: 100vh;
   }
+  .quote {
+    font-size: 2rem;
+  }
 }
 
 /* ------- About Section ------- */
@@ -108,13 +111,13 @@ each section upon clicking the link */
   flex-direction: column;
   gap: 0.5rem;
   text-align: center;
+  background-color: rgba(86, 180, 233, 0.4);
 }
 
 /* Left Side */
 .about-container {
   padding: 10px;
   background-clip: padding-box;
-  background-color: rgba(86, 180, 233, 0.4);
 }
 .about-message {
   border: 2px solid black;
@@ -129,8 +132,9 @@ each section upon clicking the link */
 /* Right Side */
 .about-features {
   margin-top: 0;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #fefefe;
 }
 
 .about-right-features {
@@ -184,9 +188,12 @@ each section upon clicking the link */
 
 /* Products Video */
 .products-video {
+  position: relative;
+  left: 15%;
+  z-index: -1;
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 70%;
 }
 
 .products-video #video {
@@ -233,6 +240,7 @@ each section upon clicking the link */
 /* Breakpoint for WideScreen */
 @media only screen and (min-width: 768px) {
   .products-video {
+    position: static;
     max-height: 520px;
     margin-left: 1.25rem;
   }
